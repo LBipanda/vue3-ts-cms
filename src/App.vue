@@ -1,8 +1,10 @@
 <template>
-  <router-link to="/login">登录页</router-link>
-  <router-link to="/main">主页面</router-link>
-  <h2>{{ $store.state.name }}</h2>
-  <router-view />
+  <div>
+    <h2>{{ $store.state.name }}</h2>
+    <router-link to="/login">登录页</router-link>
+    <router-link to="/main">主页面</router-link>
+    <router-view />
+  </div>
 </template>
 
 <script lang="ts">
